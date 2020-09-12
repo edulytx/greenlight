@@ -12,20 +12,108 @@
 # You should have received a copy of the GNU Lesser General Public License along
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 %>
+<script src="https://kit.fontawesome.com/3ad174ee23.js" crossorigin="anonymous"></script>
 
-<div class="background">
-  <div class="container pt-9 pb-8">
+<div class="background main-page">
+  <div class="container" >
     <div class="row">
-      <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
-        <% end %>
-      </div>
-
+      <div class="col-md-4 col-sm-12 col-xs-12 banner-text">
+        <h4><b>edulytX Live - Transforming Communications</b></h4>
+        <span>edulytX live is the complete conferencing solution for your needs. Create your own rooms, 
+        share presentations and record sessions. Ideal for any purpose, be it for business or for
+        education. Watch our <a href="https://www.youtube.com/watch?v=3B2f6_XC378" target="_blank">
+        tutorial video</a> and get started.
+        </span> 
+    </div>
+    <div class="col-md-8 col-sm-12 col-xs-12 image_div">
+            <img class="image_size" src="/b/edulytx_isometric.png" alt=" ">
+        </div>
     </div>
   </div>
+
+
+  <!-- Start Services Section -->
+  <div class="container">
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>FEATURES</h2>
+          <p>edulytX Live is ideal for real time communication be it for business or in education. Educators can offfer blended learning and also integrate with LMS platforms through LTI.</p>
+        </div>
+
+        <div class="row">
+          <div id="app-box" class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-globe"></i></div>
+              <h4><a href="">Conferencing</a></h4>
+              <p>Participate in Audio and Video meetings online.</p>
+            </div>
+          </div>
+
+          <div id="edu-box" class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-record-vinyl"></i></div>
+              <h4><a href="">Record Sessions</a></h4>
+              <p>Record your sessions on edulytX Live for later playback.</p>
+            </div>
+          </div>
+
+          <div id="iot-box" class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-comment-alt"></i></div>
+              <h4><a href="">Group Chat</a></h4>
+              <p>Chat with everyone in the meeting or chat privately with any one member.</p>
+            </div>
+          </div>
+
+          <div id="dev-box" class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-id-badge"></i></div>
+              <h4><a href="">User Authentication</a></h4>
+              <p>Login to your account to access more features.</p>
+            </div>
+          </div>
+      </div>
+      <div class="row" style="margin-top: 2.1rem;">
+
+        <div id="whiteboard-box" class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+              <h4><a href="">Whiteboards</a></h4>
+              <p>Annotate imprortant parts of your presentation using whiteboard features.</p>
+            </div>
+          </div>
+
+          <div id="edu-box" class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-poll"></i></div>
+              <h4><a href="">Polls</a></h4>
+              <p>Ask questions and create polls during live meetings.</p>
+            </div>
+          </div>
+
+          <div id="iot-box" class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+              <h4><a href="">Presentations</a></h4>
+              <p>Upload PDF or MS Office document to present. Zoom, pan, slide or point using the mouse.</p>
+            </div>
+          </div>
+
+          <div id="dev-box" class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-layer-group"></i></div>
+              <h4><a href="">Personalized Rooms</a></h4>
+              <p>Create rooms, control access settings and invite participants to your meetings.</p>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </section>
+  </div> <!-- End Services Section -->
 </div>
 
-<%= render "main/components/features" %>
+

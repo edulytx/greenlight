@@ -75,7 +75,9 @@ a {
 
 .header {
   height: $header-height;
+  min-width: 360px;
 }
+
 
 .wrapper {
   position: relative;
@@ -186,4 +188,118 @@ table {
 
 .btn i {
   transition: all .15s;
+}
+
+
+/** Main Index Page */
+.main-page{
+  min-width: 360px;
+  .banner-text{
+    margin: auto;
+    padding-top:10px;
+  }
+  .intro-text{
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: $button-color-blue;
+  }
+  .section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: $icon-color;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  .section-title p {
+    margin-bottom: 1.5em;
+  }
+    .services .icon-box {
+      box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+      padding: 50px 30px;
+      transition: all ease-in-out 0.4s;
+      background: #fff;
+    }
+  
+    .services .icon-box .icon {
+      margin-bottom: 10px;
+    }
+  
+    .services .icon-box .icon i {
+      color: $icon-color;
+      font-size: 36px;
+      transition: 0.3s;
+    }
+  
+    .services .icon-box h4 {
+      font-weight: 500;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+  
+    .services .icon-box h4 a {
+      color: $button-color-blue;
+      transition: ease-in-out 0.3s;
+    }
+  
+    .services .icon-box p {
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  
+    .services .icon-box:hover {
+      transform: translateY(-10px);
+    }
+  
+    .services .icon-box:hover h4 a {
+      color: $icon-color;
+    }
+    .services{
+      padding-bottom: 30px;
+    }
+  
+    .features{
+        min-width: 240px;
+        max-width:240px;
+        height:200px;
+        padding:15px 60px 15px 60px;
+        border:3px solid #226799;
+        border-radius: 30px;
+        margin:auto;
+    }
+    .image_div{
+        text-align:center;
+        padding-top:10px;
+    }
+    .image_size{
+        width:100%;
+        max-width: 726px;
+        min-width: 360px;
+    }
+  
 }
