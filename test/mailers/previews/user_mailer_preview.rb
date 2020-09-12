@@ -2,7 +2,7 @@
 
 class UserMailerPreview < ActionMailer::Preview
   def initialize(_params)
-    @logo = "http://raifox.com/images/edulytx/logo.png"
+    @logo = "https://raifox.com/images/edulytx/logo.png"
     @color = "#467fcf"
   end
 
@@ -55,7 +55,7 @@ class UserMailerPreview < ActionMailer::Preview
     user = User.first
     role = Role.first
     url = "http://example.com"
-    logo_image = "http://raifox.com/images/edulytx/logo.png"
+    logo_image = "https://raifox.com/images/edulytx/logo.png"
     user_color = "#467fcf"
     UserMailer.user_promoted(user, role, url, logo_image, user_color)
   end
@@ -66,7 +66,7 @@ class UserMailerPreview < ActionMailer::Preview
     user = User.first
     role = Role.first
     url = "http://example.com"
-    logo_image = "http://raifox.com/images/edulytx/logo.png"
+    logo_image = "https://raifox.com/images/edulytx/logo.png"
     user_color = "#467fcf"
     UserMailer.user_demoted(user, role, url, logo_image, user_color)
   end
