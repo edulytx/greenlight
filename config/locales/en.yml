@@ -283,7 +283,7 @@ en:
     legal: Terms
     privpolicy: Privacy Policy
     powered_by: Powered by %{href}.
-    copyright_notice: '© %{href}. All rights reserved except where noted. %{href}, edulytX Live and their respecitive logos & image resources are registered trademarks of Raifox.'
+    copyright_notice: '© %{href}. All rights reserved except where noted. %{href}, edulytX Live and their respective logos & image resources are registered trademarks of Raifox.'
   forgot_password:
     subtitle: Forgot Password
     email: Email
